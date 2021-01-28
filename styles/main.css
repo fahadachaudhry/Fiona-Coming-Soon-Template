@@ -1,0 +1,88 @@
+:root {
+  --gradient-start: #222123;
+  --gradient-end: #101010;
+  --body-color: #ffffff;
+  --body-alternate: #91919b;
+}
+
+body,
+html {
+  font-family: "Josefin Sans", sans-serif;
+  color: var(--body-color);
+}
+
+.glowing-fire{
+  background: rgb(250,204,89, 0.09);
+  background: radial-gradient(circle, rgba(250,204,89,0.09) 0%, transparent 100%);
+}
+
+.background-color {
+  background: var(--gradient-start);
+  background: -webkit-linear-gradient(to right, var(--gradient-start), var(--gradient-end));
+  background: linear-gradient(to right, var(--gradient-start), var(--gradient-end));
+}
+
+.heading {
+  font-size: 56px;
+}
+
+.tagline {
+  font-size: 32px;
+  color: var(--body-alternate);
+}
+
+.copyright {
+  font-size: 12px;
+  color: var(--body-alternate);
+}
+
+.heart{
+  color: #f76c1d;
+}
+
+.nav-text{
+  width: 200px;
+  text-align: right;
+  font-size: 12px;
+}
+
+.float-right{
+  float: right;
+}
+
+.blob {
+  border-radius: 100%;
+  background: #facc59;
+  background: -webkit-linear-gradient(to right, #facc59, #f76c1d);
+  background: linear-gradient(to right, #facc59, #f76c1d);
+  position: fixed;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+}
+
+.blob.size-1 {
+  width: 10px;
+  height: 10px;
+}
+.blob.size-2 {
+  width: 20px;
+  height: 20px;
+}
+.blob.size-3 {
+  width: 30px;
+  height: 30px;
+}
+
+.blob.blur-1 {
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+}
+.blob.blur-2 {
+  filter: blur(4px);
+  -webkit-filter: blur(4px);
+}
+.blob.blur-3 {
+  filter: blur(16px);
+  -webkit-filter: blur(16px);
+}
